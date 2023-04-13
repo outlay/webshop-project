@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/data.js"></script>
+    <script defer src="./scripts/cart.js"></script>
+    <title>DatoTecha | Cart</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container grid">
+            <div class="logo" id="logo">
+                <a href="#"><h1>DATOTECHA</h1></a>
+            </div>
+            <div class="shop-category">
+                <a href="#">Košarica</a>
+              </div>
+            <div class="cart-search">
+                <a href="#" class="cart-icon" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-badge" class="badge">0</span>
+                </a>
+                <a href="#" class="search-icon">
+                    <i class="fas fa-search"></i>
+            </a>
+
+        </div>
+    </div>
+    </div>
+    <div class="cart">
+        <div class="container">
+            <div class="title">
+                <h1>Pregled košarice</h1>
+            </div>
+            <div class="cart-items flex" id="shop-container">
+                <div class="item-card flex">
+                    <div class="image-container">
+                        <img src="./images/racunala/computer4.png" alt="">
+                    </div>
+                    <div class="item-info flex">
+                        <h3>Gaming računalo</h3>
+                        <div class="remove-btn flex">
+                            <i class="fas fa-trash"></i>
+                            <p class="remove-text">Remove</p>
+                        </div>
+                    </div>
+                    <div class="item-btn">
+                        <button class="btn btn-primary minus">-</button>
+
+                        <input class="itemCount" disabled min="1" max="999" step="1" value="1">
+
+                        <button class="btn btn-primary plus">+</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -257,6 +257,64 @@ img {
 .new-row {
     grid-column-start: 1;
 }
+/* end of index styling */
+
+/* cart styling */
+.cart h1 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.cart-items {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.cart-items .item-card {
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 55%;
+
+    width: 100%;
+}
+
+.remove-btn {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.remove-btn p {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.item-btn{
+    flex-direction :row;
+    align-items: center;
+    margin-left: auto;
+}
+
+.item-btn .itemCount {
+    text-align: center;
+    width: 30px;
+    padding: 5px 0;
+}
+
+.btn.btn-primary {
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.remove-btn:hover {
+    background-color: #E49393;
+    color: #fff;
+}
+
+
 
 
 /* <1024x */

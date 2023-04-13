@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/data.js"></script>
+    <script defer src="./scripts/handle.js"></script>
     <title>DatoTech | Web Store</title>
 </head>
 <body>
@@ -18,16 +20,16 @@
     <div class="navbar">
         <div class="container grid">
             <div class="logo">
-                <h1>DATOTECH</h1>
+                <h1>DATOTECHA</h1>
             </div>
             <div class="shop-category">
                 <a href="#">Računala</a>
               </div>
             </ul>
             <div class="cart-search">
-                <a href="#" class="cart-icon">
+                <a href="#" class="cart-icon" id="cart-icon">
                     <i class="fas fa-shopping-cart"></i>
-                    <span class="badge">10</span>
+                    <span id="cart-badge" class="badge">0</span>
                 </a>
                 <a href="#" class="search-icon">
                     <i class="fas fa-search"></i>
@@ -49,6 +51,11 @@
                 <a href="#">Monitori</a>
                 <a href="#">Tipkovnice</a>
                 <a href="#">Miševi</a>
+                <a href="#">Slušalice</a>
+                <a href="#">Mobilni telefoni</a>
+                <a href="#">Tableti</a>
+                <a href="#">Konzole</a>
+                <a href="#">Igre</a>
             </div>
         </div>
         <div class="sidebar-contact flex">
@@ -65,71 +72,70 @@
 
     <div class="main-content flex">
         <div class="image">
-            <h1>Dobrodošli u DatoTech</h1>
+            <h1>Dobrodošli u DatoTechu</h1>
             <p>Trgovina za tehnologiju</p>
             <img src="./images/welcomeBanner.png" alt="">
         </div>
 
         <div class="shop-container">
             <div class="shop-header">
-                <h3>NOVO U NAŠOJ TRGOVINI</h3>
-                <a href="#">Pogledaj sve</a>
+                <h3>PROIZVODI KATEGORIJE</h3>
             </div>
-            <div class="shop-items flex">
-                <div class="shop-item">
-                    <div class="shop-item-image">
-                        <img src="./images/monitor.png" alt="">
+
+            <div class="shop-items grid" id="product-container">
+                <div class="item-card">
+                    <div class="image-container">
+                        <img src="./images/racunala/computer1.png" alt="">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
                     </div>
-                    <div class="shop-item-details">
-                        <h3>Monitor</h3>
-                        <p>Monitor za računalo</p>
-                        <p>100KM</p>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <div class="shop-item-image">
-                        <img src="./images/monitor.png" alt="">
-                    </div>
-                    <div class="shop-item-details">
-                        <h3>Monitor</h3>
-                        <p>Monitor za računalo</p>
-                        <p>100KM</p>
+                    <div class="item-info">
+                        <h3>Stolno računalo</h3>
+                        
                     </div>
                 </div>
-                <div class="shop-item">
-                    <div class="shop-item-image">
-                        <img src="./images/monitor.png" alt="">
+                <div class="item-card">
+                    <div class="image-container">
+                        <img src="./images/racunala/computer2.png" alt="">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
                     </div>
-                    <div class="shop-item-details">
-                        <h3>Monitor</h3>
-                        <p>Monitor za računalo</p>
-                        <p>100KM</p>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <div class="shop-item-image">
-                        <img src="./images/monitor.png" alt="">
-                    </div>
-                    <div class="shop-item-details">
-                        <h3>Monitor</h3>
-                        <p>Monitor za računalo</p>
-                        <p>100KM</p>
+                    <div class="item-info">
+                        <h3>Računalna radna stanica</h3>
                     </div>
                 </div>
-                <div class="shop-item">
-                    <div class="shop-item-image">
-                        <img src="./images/monitor.png" alt="">
+                <div class="item-card">
+                    <div class="image-container">
+                        <img src="./images/racunala/computer3.png" alt="">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
                     </div>
-                    <div class="shop-item-details">
-                        <h3>Monitor</h3>
-                        <p>Monitor za računalo</p>
-                        <p>100KM</p>
+                    <div class="item-info">
+                        <h3>All-in-One računalo</h3>
                     </div>
                 </div>
-                <div class="shop-item">
-                    <div class="shop-item-image">
-                        <img src="./images/monitor.png" alt="">
+                <div class="item-card">
+                    <div class="image-container">
+                        <img src="./images/racunala/computer4.png" alt="">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
                     </div>
+                    <div class="item-info">
+                        <h3>Gaming računalo</h3>
+                    </div>
+                </div>
+                <div class="item-card new-row">
+                    <div class="image-container">
+                        <img src="./images/racunala/computer5.png" alt="">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                    </div>
+                    <div class="item-info">
+                        <h3>Mini računalo</h3>
+                    </div>
+                </div>
+            </div>
+            
         </div>
 
 
